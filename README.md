@@ -1,4 +1,4 @@
- """# 🧠 Nova AI – Your Personal AI Assistant
+ # 🧠 Nova AI – Your Personal AI Assistant
 
 A Real-Time Voice and Vision-Powered Chatbot built with **Python**, **Gradio**, and **OpenCV**
 
