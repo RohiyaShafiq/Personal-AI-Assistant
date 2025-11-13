@@ -41,3 +41,45 @@ Built using **Gradio**, it provides an elegant web interface combining chat + li
 | Custom AI Agent | Generates intelligent chat responses    |
 
 ---
+
+## ⚙️ How It Works
+
+Nova AI combines **speech, AI, and vision** to provide a seamless personal assistant experience:
+
+1. **Continuous Audio Recording**  
+   - The app continuously listens through your microphone using `record_audio()`.  
+   - Audio is saved as a temporary file (`audio_question.mp3`) for processing.  
+
+2. **Speech-to-Text Conversion**  
+   - Nova AI uses **Groq’s transcription API** (`transcribe_with_groq()`) to convert your spoken words into text.  
+   - This allows the AI to understand your queries in real-time.  
+
+3. **AI Response Generation**  
+   - The transcribed text is sent to a **custom AI Agent** (`ask_agent()`), which generates intelligent responses.  
+   - The AI can answer questions, provide recommendations, or chat naturally with the user.  
+
+4. **Text-to-Speech (TTS) Output**  
+   - The AI response text is converted to audio using **Google Text-to-Speech (gTTS)**.  
+   - Nova AI plays the audio, allowing you to hear the response instead of just reading it.  
+
+5. **Webcam Integration**  
+   - A live webcam feed is displayed using **OpenCV**.  
+   - The webcam interface is optimized for smooth performance, low latency, and real-time interaction.  
+
+6. **Gradio Web Interface**  
+   - The entire system runs in a **Gradio Blocks interface**.  
+   - The interface combines:  
+     - Live webcam feed  
+     - Chatbot conversation window  
+     - Continuous voice interaction  
+     - Buttons to start/stop camera and clear chat  
+
+7. **Event Loop & Continuous Listening**  
+   - The system continuously records, transcribes, generates responses, and plays audio in a loop.  
+   - The conversation persists in the chat window, and you can clear it at any time.  
+
+**In short:** Nova AI listens to your voice, understands your query, responds intelligently, speaks aloud, and shows a live webcam feed — all in real-time.
+
+---
+
+---
